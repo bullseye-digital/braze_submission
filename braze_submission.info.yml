@@ -1,0 +1,8 @@
+name: 'Braze Submission'
+type: module
+description: 'Submit data to Braze from module and webform'
+core: 8.x
+package: 'Ogilvy'
+dependencies:
+  - webform
+configure: braze_submission.braze_submission_config_form

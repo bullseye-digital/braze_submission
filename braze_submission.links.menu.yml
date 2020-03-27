@@ -1,0 +1,6 @@
+braze_submission.braze_submission_config_form:
+  title: 'Braze Submission Configuration Form'
+  route_name: braze_submission.braze_submission_config_form
+  description: 'Configure Braze submission settings'
+  parent: system.admin_config_system
+  weight: 99

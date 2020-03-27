@@ -1,0 +1,36 @@
+<?php
+
+/**
+ * @file
+ * Contains braze_submission.module.
+ */
+
+use Drupal\Core\Routing\RouteMatchInterface;
+
+/**
+ * Implements hook_help().
+ */
+function braze_submission_help($route_name, RouteMatchInterface $route_match) {
+  switch ($route_name) {
+    // Main module help for the braze_submission module.
+    case 'help.page.braze_submission':
+      $output = '';
+      $output .= '<h3>' . t('About') . '</h3>';
+      $output .= '<p>' . t('Submit data to Braze from module and webform') . '</p>';
+      return $output;
+
+    default:
+  }
+}
+
+/**
+ * Implements hook_theme().
+ */
+function braze_submission_theme() {
+  return [
+    'webform_handler_webform_braze_submission_summary' => [
+      'variables' => ['settings' => NULL, 'handler' => NULL],
+      'template' => 'webform-braze-submission-summary',
+    ],
+  ];
+}

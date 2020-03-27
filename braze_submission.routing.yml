@@ -1,0 +1,9 @@
+braze_submission.braze_submission_config_form:
+  path: '/admin/config/braze_submission/brazesubmissionconfig'
+  defaults:
+    _form: '\Drupal\braze_submission\Form\BrazeSubmissionConfigForm'
+    _title: 'Braze Submission Config Form'
+  requirements:
+    _permission: 'access administration pages'
+  options:
+    _admin_route: TRUE

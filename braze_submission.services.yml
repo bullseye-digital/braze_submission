@@ -1,0 +1,4 @@
+services:
+  braze_submission.braze_submission_service:
+    class: Drupal\braze_submission\BrazeSubmissionService
+    arguments: ['@config.factory', '@http_client', '@logger.factory']
