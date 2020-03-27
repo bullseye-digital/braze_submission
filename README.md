@@ -15,6 +15,8 @@ Module setting can be found at: /admin/config/braze_submission/brazesubmissionco
 ## Webform Custom data mapping
 Custom data mapping is in YML format. Example below:
 
+![Webform mapping settings](https://github.com/bullseye-digital/braze_submission/raw/master/webform-settings.jpg)
+
 # Use module service for other module
 * Call statically:
 $braze_submission = \Drupal::service('braze_submission.braze_submission_service');
