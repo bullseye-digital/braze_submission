@@ -69,7 +69,7 @@ class BrazeSubmissionService implements BrazeSubmissionInterface {
    */
   public function brazeSubmissionSendBraze(array $data) {
     $braze_configs = $this->brazeSubmissionGetConfigs();
-    $valid_braze_config = (isset($braze_configs['api_url']) && !empty($braze_configs['api_url']) && isset($braze_configs['app_group_key']) && !empty($cbraze_configsonfigs['app_group_key'])) ? TRUE : FALSE;
+    $valid_braze_config = (isset($braze_configs['api_url']) && !empty($braze_configs['api_url']) && isset($braze_configs['app_group_key']) && !empty($braze_configs['app_group_key'])) ? TRUE : FALSE;
 
     // Send using global config. to global config.
     if ($valid_braze_config) {
@@ -94,7 +94,7 @@ class BrazeSubmissionService implements BrazeSubmissionInterface {
   public function brazeSubmissionWebformSendBraze(array $data, array $configs) {
     $braze_configs = $this->brazeSubmissionGetConfigs();
     $valid_webform_config = (isset($configs['api_url']) && !empty($configs['api_url']) && isset($configs['app_group_key']) && !empty($configs['app_group_key'])) ? TRUE : FALSE;
-    $valid_braze_config = (isset($braze_configs['api_url']) && !empty($braze_configs['api_url']) && isset($braze_configs['app_group_key']) && !empty($cbraze_configsonfigs['app_group_key'])) ? TRUE : FALSE;
+    $valid_braze_config = (isset($braze_configs['api_url']) && !empty($braze_configs['api_url']) && isset($braze_configs['app_group_key']) && !empty($braze_configs['app_group_key'])) ? TRUE : FALSE;
 
     // Send submission using webform config if set.
     if ($valid_webform_config) {
