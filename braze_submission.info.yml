@@ -1,7 +1,7 @@
 name: 'Braze Submission'
 type: module
 description: 'Submit data to Braze from module and webform'
-core: 8.x
+core_version_requirement: ^8 || ^9
 package: 'Ogilvy'
 dependencies:
   - webform
